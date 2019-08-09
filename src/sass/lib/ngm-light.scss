@@ -1,0 +1,10 @@
+$colorStrongest: $ngp_color-gray-80;
+$colorNeutral: $ngp_color-gray-50;
+$colorWeak: $ngp_color-gray-40;
+$colorWeakest: $ngp_color-gray-10;
+
+& {
+	background: $ngp_color-white
+}
+
+@import './ngm.scss';

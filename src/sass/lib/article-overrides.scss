@@ -1,0 +1,15 @@
+/* hide right rail promoted stories */
+.promo.section {
+	display: none;
+}
+
+/* hide horizontal rule, social and pub date */
+.lead-component .content-well-container hr,
+.lead-component .lead-container__social-wrap {
+	display: none;
+}
+
+/* hide jpg fallbacks */
+.image.parbase.section {
+	display: none;
+}

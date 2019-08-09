@@ -1,0 +1,349 @@
+// https://github.com/natgeo/styleguide/blob/master/src/styles/geograph/_mixins.scss
+
+// sass-lint:disable mixin-name-format
+@mixin GeoBrandBlack {
+  font-family: 'GeoBrandBlack', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  text-transform: uppercase;
+}
+
+@mixin GeoBrandBlackItalic {
+  font-family: 'GeoBrandBlackItalic', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  text-transform: uppercase;
+}
+
+@mixin GeoBrandBold {
+  font-family: 'GeoBrandBold', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  text-transform: uppercase;
+}
+
+@mixin GeoBrandBoldItalic {
+  font-family: 'GeoBrandBoldItalic', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  text-transform: uppercase;
+}
+
+@mixin GeoBrandRegular {
+  font-family: 'GeoBrandRegular', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  text-transform: uppercase;
+}
+
+@mixin GeoBrandRegularItalic {
+  font-family: 'GeoBrandRegularItalic', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  text-transform: uppercase;
+}
+
+@mixin GeoEditBlack {
+  font-family: 'GeoEditBlack', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+}
+
+@mixin GeoEditBlackItalic {
+  font-family: 'GeoEditBlackItalic', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+}
+
+@mixin GeoEditBold {
+  font-family: 'GeoEditBold', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+}
+
+@mixin GeoEditBoldItalic {
+  font-family: 'GeoEditBoldItalic', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+}
+
+@mixin GeoEditMedium {
+  font-family: 'GeoEditMedium', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+}
+
+@mixin GeoEditMediumItalic {
+  font-family: 'GeoEditMediumItalic', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+}
+
+@mixin GeoEditRegular {
+  font-family: 'GeoEditRegular', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+}
+
+@mixin GeoEditRegularItalic {
+  font-family: 'GeoEditRegularItalic', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+}
+
+@mixin geographBrandBold($size) {
+  @include GeoBrandBold;
+  -moz-osx-font-smoothing: grayscale; //sass-lint:disable-line no-vendor-prefixes
+  -webkit-font-smoothing: antialiased; //sass-lint:disable-line no-vendor-prefixes
+  font-weight: 400;
+
+  b,
+  strong {
+    font-weight: 400;
+  }
+
+  i,
+  em {
+    @include GeoBrandBoldItalic;
+    font-style: normal;
+  }
+
+  @if $size == 48 {
+    font-size: 48px;
+    letter-spacing: 4px;
+    line-height: 1.167;
+  } @else if $size == 42 {
+    font-size: 42px;
+    letter-spacing: 3.2px;
+    line-height: 1.19;
+  } @else if $size == 38 {
+    font-size: 38px;
+    letter-spacing: 3.2px;
+    line-height: 1.105;
+  } @else if $size == 32 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 1.25;
+  } @else if $size == 22 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 1.273;
+  } @else if $size == 16 {
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+  } @else {
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+  }
+}
+
+@mixin geographBrandBlack($size) {
+  @include GeoBrandBlack;
+  -moz-osx-font-smoothing: grayscale; //sass-lint:disable-line no-vendor-prefixes
+  -webkit-font-smoothing: antialiased; //sass-lint:disable-line no-vendor-prefixes
+
+  i,
+  em {
+    @include GeoBrandBlackItalic;
+    font-style: normal;
+  }
+
+  b,
+  strong {
+    font-weight: 400;
+  }
+
+  @if $size == 42 {
+    font-size: 42px;
+    letter-spacing: 5px;
+    line-height: 1.19;
+  } @else {
+    font-size: 32px;
+    letter-spacing: 3.9px;
+    line-height: 1.25;
+  }
+}
+
+@mixin geographBrandRegular($size) {
+  @include GeoBrandRegular;
+  -moz-osx-font-smoothing: grayscale; //sass-lint:disable-line no-vendor-prefixes
+  -webkit-font-smoothing: antialiased; //sass-lint:disable-line no-vendor-prefixes
+  font-weight: 400;
+
+  i,
+  em {
+    @include GeoBrandRegularItalic;
+    font-style: normal;
+
+    b,
+    strong {
+      @include GeoBrandBoldItalic;
+      font-weight: 400;
+    }
+  }
+
+  b,
+  strong {
+    @include GeoBrandBold;
+    font-weight: 400;
+
+    i,
+    em {
+      @include GeoBrandBoldItalic;
+      font-style: normal;
+    }
+  }
+
+  @if $size == 16 {
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+  } @else if $size == 14 {
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+  } @else if $size == 12 {
+    font-size: 12px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+  }
+}
+
+@mixin geographEditBold($size) {
+  @include GeoEditBold;
+  -moz-osx-font-smoothing: grayscale; //sass-lint:disable-line no-vendor-prefixes
+  -webkit-font-smoothing: antialiased; //sass-lint:disable-line no-vendor-prefixes
+  font-weight: 400;
+
+  i,
+  em {
+    @include GeoEditBoldItalic;
+    font-style: normal;
+  }
+
+  b,
+  strong {
+    font-weight: 400;
+  }
+
+  @if $size == 42 {
+    font-size: 42px;
+    letter-spacing: .3px;
+    line-height: 1.143;
+  } @else if $size == 38 {
+    font-size: 38px;
+    letter-spacing: .5px;
+    line-height: 1.211;
+  } @else if $size == 32 {
+    font-size: 32px;
+    letter-spacing: .3px;
+    line-height: 1.188;
+  } @else if $size == 12 {
+    font-size: 12px;
+    letter-spacing: .3px;
+    line-height: 1.5;
+  } @else {
+    font-size: 28px;
+    letter-spacing: .3px;
+    line-height: 1.214;
+  }
+}
+
+@mixin geographEditMedium($size) {
+  @include GeoEditMedium;
+  -moz-osx-font-smoothing: grayscale; //sass-lint:disable-line no-vendor-prefixes
+  -webkit-font-smoothing: antialiased; //sass-lint:disable-line no-vendor-prefixes
+  font-weight: 400;
+
+  i,
+  em {
+    @include GeoEditMediumItalic;
+    font-style: normal;
+
+    b,
+    strong {
+      @include GeoEditBoldItalic;
+      font-weight: 400;
+    }
+  }
+
+  b,
+  strong {
+    @include GeoEditBold;
+    font-weight: 400;
+
+    i,
+    em {
+      @include GeoEditBoldItalic;
+      font-style: normal;
+    }
+  }
+
+  @if $size == 38 {
+    font-size: 38px;
+    letter-spacing: .5px;
+    line-height: 1.211;
+  } @else if $size == 28 {
+    font-size: 28px;
+    letter-spacing: .3px;
+    line-height: 1.214;
+  } @else if $size == 24 {
+    font-size: 24px;
+    letter-spacing: .5px;
+    line-height: 1.5;
+  } @else if $size == 22 {
+    font-size: 22px;
+    letter-spacing: .1px;
+    line-height: 1.273;
+  } @else if $size == 16 {
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 1.5;
+  } @else {
+    font-size: 14px;
+    letter-spacing: .5px;
+    line-height: 1.429;
+  }
+}
+
+@mixin geographEditRegular($size) {
+  @include GeoEditRegular;
+  -moz-osx-font-smoothing: grayscale; //sass-lint:disable-line no-vendor-prefixes
+  -webkit-font-smoothing: antialiased; //sass-lint:disable-line no-vendor-prefixes
+  font-weight: 400;
+
+  i,
+  em {
+    @include GeoEditRegularItalic;
+    font-style: normal;
+
+    b,
+    strong {
+      @include GeoEditBoldItalic;
+      font-weight: 400;
+    }
+  }
+
+  b,
+  strong {
+    @include GeoEditBold;
+    font-weight: 400;
+
+    i,
+    em {
+      @include GeoEditBoldItalic;
+      font-style: normal;
+    }
+  }
+  @if $size == 18 {
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 1.5;
+  } @else if $size == 16 {
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 1.5;
+  } @else if $size == 12 {
+    font-size: 12px;
+    letter-spacing: .3px;
+    line-height: 1.429;
+  } @else {
+    font-size: 14px;
+    letter-spacing: .3px;
+    line-height: 1.429;
+  }
+}
+
+@mixin smartbody($size) {
+  -moz-osx-font-smoothing: grayscale; //sass-lint:disable-line no-vendor-prefixes
+  -webkit-font-smoothing: antialiased; //sass-lint:disable-line no-vendor-prefixes
+  color: $ngp_color-gray-80;
+  font-family: Georgia, serif;
+
+  @if $size == 19 {
+    font-size: 19px;
+    font-weight: normal;
+    letter-spacing: .1px;
+    line-height: 1.632;
+  } @else {
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: .001em;
+    line-height: 1.6875;
+  }
+
+}

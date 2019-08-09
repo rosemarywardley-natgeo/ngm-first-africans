@@ -1,0 +1,16 @@
+@at-root {
+    .media--cinematic {
+        max-width: 1900px;
+    }
+}
+
+
+@mixin ngFullBleed($selector, $artboard) {
+	#{$selector} {
+	    .g-artboard[id*=#{$artboard}] {
+	        left: 50%;
+	        transform: translate(-50%, 0px);
+	        margin:0;
+	    }
+	}
+}

@@ -1,0 +1,240 @@
+@import './styleguide-colors.scss';
+@import './variables.scss';
+@import './ngd-footer.scss';
+
+
+/* general reset */
+& {
+	color: $colorStrongest;
+}
+
+#ng-graphic-wrap {
+	position:relative;
+}
+
+/* page styles */
+.ngm-is-narrow {
+	max-width: 550px;
+	margin: 0 auto;
+
+	@media (max-width: $small) {
+		padding: 1em;
+	}
+}
+
+.ngm-is-limitedWidth {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1em;
+}
+
+
+/* main header styles */
+.ngmMainHeader {
+	border-bottom: 1px solid $colorWeakest;
+}
+
+
+.ngmMainHeader-logoWrapper {
+	max-width: 140px;
+	padding: 0.5em 0;
+
+	@media (min-width: $med) {
+		max-width: 160px;
+	}
+}
+
+/* header styles */
+
+// .ngmHeader {
+	// padding: 0 0 1.5em 0;
+	// border-bottom: 1px solid #e6e6e6;
+// }
+
+.ngmKicker {
+	@include geographBrandBold(16);
+	margin: 4em 0 0 0;
+
+	span {
+	    display: inline-block;
+	}
+	a {	
+		color: $colorStrongest;
+	    border-bottom: none;
+    	margin-left: 2px;
+    	text-decoration: none;
+    	:hover {
+	    	color: $colorNeutral;
+    	}
+
+	}
+}
+
+.ngmKicker:before {
+    content: " ";
+    display: inline-block;
+    background: $ngp_color-primary;
+    background: $ngp_color-primary;
+    width: 4px;
+    height: 14px;
+    margin: 0px 20px -1px 0;
+}
+.ngmKicker:after {
+	content: " ";
+    display: inline-block;
+    background: $ngp_color-primary;
+    background: $ngp_color-primary;
+    width: 4px;
+    height: 14px;
+    margin: 0px 0px -1px 20px;
+}
+
+
+.ngmHeadline-basic {
+	margin: 1em 0 0.8em 0;
+	font-size: 28px;
+	@include GeoEditBold;
+    font-weight: 400;
+    line-height: 1.211;
+    letter-spacing: 0.5px;
+
+    @media (min-width: $med) {
+    	font-size: 38px;
+    }
+}
+
+.ngmDek {
+	font-size: 18px;
+	@include GeoEditRegular;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.ngmDateAndByline {
+	margin: 31px 0 10px;
+	font-size: 12px;
+	@include GeoEditRegular;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $colorStrongest;
+}
+
+.ngmDateline {
+	color: $colorWeak;
+}
+
+
+
+/* body styles */
+
+.ngmBody {
+	margin: 3em auto 0 auto;
+}
+
+.ngmBodyCopy {
+	margin-bottom: 32px;
+	color: $colorStrongest;
+    font-size: 20px;
+	font-family: Georgia, serif;
+	font-weight: normal;
+	line-height: 1.632;
+	letter-spacing: .1px;
+
+	a {
+		border-bottom: 2px solid #ffcc00;
+	    color: #333;
+	    text-decoration: none;
+
+	    &:hover {
+	    	color: #999;
+	    	border-bottom: 2px solid #999;
+	    }
+	}
+
+	@media (max-width: $small) {
+	    font-size: 18px;
+	}
+}
+
+blockquote {
+	margin: 32px 0px;
+	padding: 16px 20px;
+	border: 1px solid #c9c9c9;
+	color: gray;
+	font-family: 'GeoEditRegular', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0;
+	letter-spacing: .1px;
+	line-height: 1.5;
+	overflow: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.ngmCredits {
+	font-size: 14px;
+}
+
+
+// share tool
+.ngmSocial {
+	float:right;
+	   margin: 18px 0;
+	.addthis__component--expanded .social-link:hover .mt_icon, .addthis__component--expanded .social-link:focus .mt_icon {
+		color: $colorStrongest;
+	}
+
+    .addthis__component {
+        text-align: left;
+        .sharebutton__modal--button-container {
+            width: auto;
+            a.social-link {
+                &::before {
+                    display: none;
+                }
+                border: 0;
+                padding: 0;
+                .share__icon-label {
+                    display: none;
+                }
+            }
+
+            &.addthis_button_link {
+                display: none;
+                a.social-link {
+                    .share__icon-container {
+                        .mt_icon {
+                            color: $colorNeutral;
+                        }
+                    }
+                }
+            }
+            &.addthis_button_sms {
+                display: none;
+            }
+        }
+    }
+    &:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+}
+
+@media (max-width: $xsmall) {
+
+    .ngmSocial {
+        padding-top: 6px;
+
+        .addthis__component {
+            justify-content: flex-start;
+            .sharebutton__modal--button-container {
+                margin-right: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+// ==========
+// FONT FACES
+// ==========
+
+
+@font-face {
+  font-family: 'Haas';
+  font-style: normal;
+  font-weight: 600;
+  src: url('//fonts.ngeo.com/haas/1-0-0/NHaasGroteskDSPro-65Md.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Haas';
+  font-style: italic;
+  font-weight: 600;
+  src: url('//fonts.ngeo.com/haas/1-0-0/NHaasGroteskDSPro-66MdIt.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Haas';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//fonts.ngeo.com/haas/1-0-0/NHaasGroteskDSPro-55Rg.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Haas';
+  font-style: italic;
+  font-weight: 400;
+  src: url('//fonts.ngeo.com/haas/1-0-0/NHaasGroteskDSPro-56It.woff2') format('woff2');
+}
+
+
+$mt3_haas-stack: 'Haas', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Arial, sans-serif;
+$mt3_verlag-stack: 'HCo Verlag', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+$mt3_georgia-stack: Georgia, serif;
+
+$mt3_verlag-bold: 700;
+
+%mt3_verlag {
+  font-family: $mt3_verlag-stack;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  word-spacing: .05em;
+}
+
+%mt3_haas {
+  font-family: $mt3_haas-stack;
+  letter-spacing: .04em;
+}

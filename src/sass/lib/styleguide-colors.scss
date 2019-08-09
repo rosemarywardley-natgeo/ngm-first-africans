@@ -1,0 +1,88 @@
+// https://github.com/natgeo/styleguide/blob/master/src/styles/themes/default/vars/_colors.scss
+
+
+// ======
+// COLORS
+// ======
+
+
+// Neutrals
+$ngp_color-black: #000;
+$ngp_color-gray-86: #222;
+$ngp_color-gray-80: #333;
+$ngp_color-gray-66: #555;
+$ngp_color-gray-50: #808080;
+$ngp_color-gray-40: #999;
+$ngp_color-gray-36: #a4a4a4;
+$ngp_color-gray-30: #ccc;
+$ngp_color-gray-10: #e6e6e6;
+$ngp_color-gray-5: #f2f2f2;
+$ngp_color-gray-3: #f7f7f7;
+$ngp_color-gray-2: #fafafa;
+$ngp_color-white: #fff;
+$lightgray: #d3d3d3;
+
+
+// Neutrals extended
+$ngp_color-white-semit: rgba($ngp_color-white, .5);
+$ngp_color-gray-semit: rgba(179, 179, 179, .4);
+$ngp_color-black-semit: rgba($ngp_color-black, .5);
+$ngp_color-black-semit-l: rgba($ngp_color-black, .2);
+
+
+// Main colors
+$ngp_color-primary: #fc0;
+$ngp_color-affirmation: #1ebe28;
+$ngp_color-danger: #fc4349;
+$ngp_color-sponsor: #7694cb; // Deprecated
+
+
+// Social Colors
+$ngp_social-colors: (
+  facebook: #3b5998,
+  flickr: #ff0084, // Deprecated
+  google-plus: #dd4b39, // Deprecated
+  instagram: #3f729b, // Deprecated
+  linkedin: #0077b5,
+  pinterest: #bd081c,
+  snapchat: #fffc00, // Deprecated
+  tumblr: #35465c, // Deprecated
+  twitter: #55acee,
+  vimeo: #1ab7ea, // Deprecated
+  vine: #00bf8f, // Deprecated
+  whatsapp: #43d854, // Deprecated
+  youtube: #cd201f // Deprecated
+);
+
+
+$ngp_colors: (
+  black: $ngp_color-black, // sass-lint:disable-line no-color-keywords
+  gray86: $ngp_color-gray-86,
+  gray80: $ngp_color-gray-80,
+  gray66: $ngp_color-gray-66,
+  gray50: $ngp_color-gray-50,
+  gray40: $ngp_color-gray-40,
+  gray36: $ngp_color-gray-36,
+  gray30: $ngp_color-gray-30,
+  gray10: $ngp_color-gray-10,
+  gray5: $ngp_color-gray-5,
+  gray3:  $ngp_color-gray-3,
+  gray2: $ngp_color-gray-2,
+  white: $ngp_color-white,  // sass-lint:disable-line no-color-keywords
+
+  primary: $ngp_color-primary,
+  affirmation: $ngp_color-affirmation,
+  danger: $ngp_color-danger,
+  sponsor: $ngp_color-sponsor // Deprecated
+);
+
+
+// Modifiers
+$ngp_color-inverse: $ngp_color-white;
+
+
+// Overrides
+
+// some vars to match placeholder colors against the defaults in modules-images
+$ngp_default-modules-images-background: $ngp_color-gray-semit;
+$ngp_default-modules-images-box-logo: $ngp_color-primary;

@@ -1,0 +1,102 @@
+.dipgbl-footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  font-family: 'GeoEditRegular', 'geographEdit-Regular', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  background: #000;
+  color: #fff; }
+  .dipgbl-footer * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .dipgbl-footer .ngp_icon {
+    width: 1.5rem;
+    height: 1.5rem; }
+    .dipgbl-footer .ngp_icon--large {
+      width: 2.125rem;
+      height: 2.125rem; }
+  .dipgbl-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 20px; }
+    @media screen and (min-width: 70em) {
+      .dipgbl-footer__links {
+        display: inline-block; } }
+    .dipgbl-footer__links li {
+      padding: 4px 0;
+      line-height: 1;
+      vertical-align: middle; }
+      .dipgbl-footer__links li:first-child {
+        font-size: 0; }
+      @media screen and (max-width: 999px) {
+        .dipgbl-footer__links li:not(:last-child) {
+          margin-bottom: 10px; } }
+      @media screen and (min-width: 1000px) {
+        .dipgbl-footer__links li {
+          padding: 0 20px;
+          display: inline-block;
+          border-right: 1px solid #fff; }
+          .dipgbl-footer__links li:first-child {
+            padding: 0; }
+          .dipgbl-footer__links li:first-child, .dipgbl-footer__links li:last-child {
+            border-right: 0; } }
+      .dipgbl-footer__links li a {
+        color: #fff;
+        -webkit-transition: color .3s ease-out;
+        transition: color .3s ease-out;
+        border-bottom: none;
+        text-decoration: none; }
+  .dipgbl-footer__copyright {
+    width: 100%;
+    border-top: 1px solid #333;
+    padding: 20px; }
+    .dipgbl-footer__copyright span {
+      display: block;
+      line-height: 1.5;
+      color: #999; }
+      .dipgbl-footer__copyright span:first-child {
+        margin-bottom: 2px; }
+      @media screen and (min-width: 1000px) {
+        .dipgbl-footer__copyright span {
+          width: auto;
+          display: inline-block;
+          line-height: 1; }
+          .dipgbl-footer__copyright span:first-child {
+            border-right: 1px solid #999;
+            margin-bottom: 0;
+            padding: 0 15px 0 6px; }
+          .dipgbl-footer__copyright span:last-child {
+            padding: 0 6px 0 15px; } }
+  .dipgbl-footer__sns {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 25px 20px;
+    font-size: 0; }
+    .dipgbl-footer__sns * {
+      display: inline-block; }
+    .dipgbl-footer__sns__text {
+      font-family: 'GeoBrandBold', 'geographBrand-Bold', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 3px;
+      line-height: 1;
+      -webkit-transform: translateY(5px);
+              transform: translateY(5px); }
+    .dipgbl-footer__sns a {
+      color: #fff;
+      -webkit-transition: color .3s ease-out;
+      transition: color .3s ease-out;
+      margin-left: 20px;
+      border-bottom: none; }
+      .dipgbl-footer__sns a .gct-icon {
+        width: 18px;
+        height: 18px; }
+        .dipgbl-footer__sns a .gct-icon svg {
+          vertical-align: middle;
+          width: 18px;
+          height: 18px; }
