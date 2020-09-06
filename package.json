@@ -28,7 +28,7 @@
 		"gulp-sourcemaps": "^2.6.1",
 		"gulp-uglify": "^3.0.0",
 		"gulp-url-prefixer": "0.0.6",
-		"handlebars": "^4.0.10",
+		"handlebars": "^4.5.3",
 		"hbsfy": "^2.7.0",
 		"html-entities": "^1.2.1",
 		"htmlparser2": "^3.9.2",
