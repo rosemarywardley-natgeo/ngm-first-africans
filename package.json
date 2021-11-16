@@ -4,7 +4,7 @@
 	"devDependencies": {
 		"archieml": "^0.4.2",
 		"autoprefixer": "^7.1.4",
-		"aws-sdk": "^2.283.1",
+		"aws-sdk": "^2.814.0",
 		"babel-core": "^6.26.0",
 		"babel-preset-env": "^1.6.0",
 		"babelify": "^7.3.0",
